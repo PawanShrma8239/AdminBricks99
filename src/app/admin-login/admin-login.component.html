@@ -1,0 +1,16 @@
+<!-- admin-login.component.html -->
+
+<div class="login-container">
+    <img src="src\assets\image\logo.svg.png" alt="Your Logo" class="logo">
+    <h2>Admin Login</h2>
+    <form (ngSubmit)="login()">
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" name="userId" [(ngModel)]="userId" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
